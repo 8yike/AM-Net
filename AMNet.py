@@ -137,7 +137,7 @@ class DepthwiseSeparableConv(nn.Sequential):
 
 
 class AMNet(nn.Module):
-    def __init__(self, in_channels: int = 3, num_classes: int = 1, base_c: int = 32, bilinear: bool = True):
+    def __init__(self, in_channels: int = 3, num_classes: int = 2, base_c: int = 32, bilinear: bool = True):
         super(AMNet, self).__init__()
         self.in_channels = in_channels
         self.num_classes = num_classes
